@@ -4,18 +4,15 @@
  * and open the template in the editor.
  */
 package Models;
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 /**
  *
  * @author Алексей
  */
 @Entity
 @Table(name = "Role")
+@NamedQuery(name="Role.getAll",query="SELECT a from Role a")
+
 public class Role {
     @Id
     @Column(name = "ID")

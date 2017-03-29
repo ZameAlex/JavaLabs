@@ -4,20 +4,14 @@
  * and open the template in the editor.
  */
 package Models;
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.FetchType;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.ManyToOne;
-import javax.persistence.Table;
+import javax.persistence.*;
 /**
  *
  * @author Алексей
  */
 @Entity
 @Table(name = "User")
+@NamedQuery(name="User.getAll",query="SELECT a from User a")
 public class User {
     @Id
     @Column(name = "ID")
