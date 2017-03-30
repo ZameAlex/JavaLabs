@@ -1,0 +1,10 @@
+<web-app xmlns="jar://C:/Program Files (x86)/JetBrains/IntelliJ IDEA 2017.1/plugins/Geronimo/lib/geronimoIntegration.jar!/descriptors/geronimo-web-1.0.xsd">
+    <servlet>
+        <servlet-name>Answer</servlet-name>
+        <servlet-class>servlets.AnswerServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Answer</servlet-name>
+        <url-pattern>\*</url-pattern>
+    </servlet-mapping>
+</web-app>
